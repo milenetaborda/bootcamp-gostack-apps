@@ -14,7 +14,9 @@ try {
     name,
     email,
     password,
-  })
+  });
+
+  delete user.password;
 
   return response.json(user);
 } catch(err) {
